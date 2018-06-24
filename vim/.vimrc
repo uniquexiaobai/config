@@ -13,7 +13,6 @@ set smarttab
 
 " 自动对齐
 set autoindent
-
 set smartindent
 
 " 显示标尺
@@ -35,3 +34,4 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" 参考：https://www.zhihu.com/question/19989337
