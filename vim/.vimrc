@@ -1,6 +1,5 @@
 set nocompatible
 filetype off
-filetype plugin indent on
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -15,8 +14,26 @@ Plugin 'ap/vim-css-color'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'nathanaelkane/vim-indent-guides'
+"" 语法高亮包
+Plugin 'sheerun/vim-polyglot'
+Plugin 'pangloss/vim-javascript'
+"" tab补全
+Plugin 'ervandew/supertab'
+Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end()
+filetype plugin indent on
+
+" 插入光标样式
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+" 高亮匹配的括号颜色
+:hi MatchParen ctermbg=Yellow guibg=lightblue
+
+" 主题
+set background=dark
+colorscheme solarized
 
 " 显示行号
 set number
@@ -64,10 +81,6 @@ syntax on
 
 " 底部显示当前所在模式
 set showcmd
-
-" 主题配置
-set background=dark
-colorscheme solarized
 
 " 文件保存时不创建备份文件
 set nobackup
