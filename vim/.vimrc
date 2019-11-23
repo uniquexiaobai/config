@@ -20,6 +20,7 @@ Plugin 'pangloss/vim-javascript'
 "" tab补全
 Plugin 'ervandew/supertab'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'neoclide/coc.nvim'
 
 call vundle#end()
 filetype plugin indent on
